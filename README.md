@@ -24,17 +24,22 @@ This portfolio is a compilation of notebooks which I created for data analysis o
 
 This is a NLP web application that I built from scratch to perform sentiment analysis. I develop and train a Long-Short-Term-Memory Model (LSTM) to classify user sentiments into one of five classes. Then I deploy the code to a Flask server using the Dash framework. The web application takes in user inputs and performs sentiment analysis in real-time as the text is entered. The code can be found [here](https://github.com/sankirnajoshi/sentiment-app).
 
-![](images/sentiment_demo.gif)
+<img src="images/sentiment_demo.gif" alt="sent-app" width="800"/>
 
 ### Unsupervised learning on the FIFA 20 players
 
-FIFA 20 is a soccer video game and has a rich assortment of players with hundreds of attributes per player. My goal was to develop and understand if the players form any interesting clusters through visualization. I performed dimensionality reduction to 2 dimensions and applied KMeans clustering to see the model form three clusters. The three clusters were interestingly formed by players playing in the three main positions in Soccer: Forwards, Midfielders, Defenders. The report I made for school is available [here]() and the code is available [here](https://www.kaggle.com/damnation/pca-and-clustering-fifa-20-players).
+FIFA 20 is a soccer video game and has a rich assortment of players with hundreds of attributes per player. My goal was to develop and understand if the players form any interesting clusters through visualization. I performed dimensionality reduction to 2 dimensions and applied KMeans clustering to see the model form three clusters. The three clusters were interestingly formed by players playing in the three main positions in Soccer: Forwards, Midfielders, Defenders. The report I made for school is available [here](reports/Fifa_20_clustering_analysis.pdf) and the code is available [here](https://www.kaggle.com/damnation/pca-and-clustering-fifa-20-players).
 
-![](images/sentiment_demo.gif)
+<p float="left">
+  <img src="images/fifa_20.png" alt="fifa" width="500"/>
+  <img src="images/fifa_20_1.png" alt="fifa_1" width="500"/>
+</p>
 
 ### Iris exploratory dataset analysis
 
-Performed EDA on the classic IRIS dataset using matplotlib and seaborn. Developed a vanilla classification model and KMeans clustering using sci-kit learn. The analysis is available [here](). 
+Performed EDA on the classic IRIS dataset using matplotlib and seaborn. Developed a vanilla classification model and KMeans clustering using sci-kit learn. The analysis is available as a notebook [here](notebooks/Iris_EDA.ipynb) and its rendered [markdown webpage](markdowns/Iris_EDA.md). 
+
+<img src="images/iris.png" alt="iris" width="800"/>
 
 <a id='2'></a>
 ## Kaggle Competitions.
