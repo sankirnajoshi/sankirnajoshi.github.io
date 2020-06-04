@@ -31,13 +31,18 @@
 &nbsp; &nbsp; &nbsp; &nbsp;
 [Model Training Notebook](https://github.com/sankirnajoshi/sentiment-app/blob/master/sentiment_app_training.ipynb)
 
-This is a NLP web application that I built from scratch to perform sentiment analysis. I develop and train a Long-Short-Term-Memory Model (LSTM) to classify user sentiments into one of five classes: `Very Positive`, `Positive`, `Neutral`, `Negative`, `Very Negative`. Then I deploy the code to a Flask server using the Dash framework. The web application takes in user inputs and performs sentiment analysis in real-time as the text is entered. The code can be found [here](https://github.com/sankirnajoshi/sentiment-app). The model achieves 65% test set accuracy. It may not seem much at first but given the ambiguity associated with neutral sentiments and the multi class nature of the problem, this is a decent score and the model performs very well in practice on polarized sentiments. The GIF below shows a demo of the web app with real-time user inputs.
+This is a NLP web application that I built from scratch to perform sentiment analysis. I develop and train a Long-Short-Term-Memory Model (LSTM) to classify user sentiments into one of five classes: `Very Positive`, `Positive`, `Neutral`, `Negative`, `Very Negative`. Then I deploy the code to a Flask server using the Dash framework. The web application takes in user inputs and performs sentiment analysis in real-time as the text is entered. The data for the code can be found [here](https://nlp.stanford.edu/sentiment/). This model trains fast and achieves around 65% test set accuracy. It may not seem much at first but given the ambiguity associated with neutral sentiments and the multi class nature of the problem, this is a decent score and the model performs very well in practice on polarized sentiments. The GIF below shows a demo of the web app with real-time user inputs.
 
 <img src="images/sentiment_demo.gif" alt="sent-app" width="800"/>
 
 ### Unsupervised learning on the FIFA 20 players
 
-FIFA 20 is a soccer video game and has a rich assortment of players with hundreds of attributes per player. My goal was to develop and understand if the players form any interesting clusters through visualization. I performed dimensionality reduction to 2 dimensions and applied KMeans clustering to see the model form three clusters. The three clusters were interestingly formed by players playing in the three main positions in Soccer: Forwards, Midfielders, Defenders. The report I made for school is available [here](reports/Fifa_20_clustering_analysis.pdf) and the code is available as a Kaggle Kernel [here](https://www.kaggle.com/damnation/pca-and-clustering-fifa-20-players).
+[Code](https://www.kaggle.com/damnation/pca-and-clustering-fifa-20-players)
+&nbsp; &nbsp; &nbsp; &nbsp;
+[Report](reports/Fifa_20_clustering_analysis.pdf)
+
+
+FIFA 20 is a soccer video game and has a rich assortment of players with hundreds of attributes per player. My goal was to develop and understand if the players form any interesting clusters through visualization. I performed dimensionality reduction using Feature Selection and PCA and was able to reduce the dimensionality from over a hundred variables to just two Principal Components. These two PCs captured about 70% of the variation in the data. On this low dimensional data, by applying KMeans clustering, we're able to visualize the clusters that the data forms. Based on the silhouette analysis, we end up with three clusters. The three clusters that formed are interestingly and obviously the three main playing positions in Soccer: Forwards, Midfielders, Backwards. The report I made for school is available [here](reports/Fifa_20_clustering_analysis.pdf) and the code is available as a Kaggle Kernel [here](https://www.kaggle.com/damnation/pca-and-clustering-fifa-20-players).
 
 <p float="left">
   <img src="images/fifa_20.png" alt="fifa" width="400"/>
@@ -46,8 +51,12 @@ FIFA 20 is a soccer video game and has a rich assortment of players with hundred
 
 ### Iris exploratory dataset analysis
 
-We start with performing exploratory data analysis on the classic IRIS dataset using matplotlib and seaborn. Next, we develop a vanilla classification model and test performance on the test set. Finally, we apply KMeans clustering using sci-kit learn to understand if our model can differentiate between the classes of Iris. The analysis is available as a notebook [here](https://github.com/sankirnajoshi/sankirnajoshi.github.io/blob/master/notebooks/Iris_EDA.ipynb)  and as a rendered [markdown Webpage](markdowns/Iris_EDA.md). 
+[Webpage](markdowns/Iris_EDA.md)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+[Notebook](https://github.com/sankirnajoshi/sankirnajoshi.github.io/blob/master/notebooks/Iris_EDA.ipynb)
 
+
+IRIS is one of the most popular dataset in machine learning, the data is clean, its straightforward to apply ML models, and some results are so unambiguous (thanks Setosa). Its just good to see ML work so well :) In this project we perform EDA through visualizations and statistical measures. Next, a vanilla classification model using KNNs and test performance on the test set. Finally, we apply KMeans clustering using sci-kit learn to understand if our model can differentiate between the classes of Iris... And it does pretty well as expected ;) The analysis is available as a notebook  and its rendered markdown webpage.
 
 <img src="images/iris.png" alt="iris" width="800"/>
 
@@ -66,8 +75,8 @@ We start with performing exploratory data analysis on the classic IRIS dataset u
 [Report](reports/carvana_report.pdf)
 
 
-[Carvana Image Masking Challenge](https://www.kaggle.com/c/carvana-image-masking-challenge) was a Kaggle competition sponsored by Carvana - A online car buying platform. We were tasked to remove background from car images and create a masking image for the cars so that Carvana could put the car on to any different background somewhat like Photoshop but without human intervention. It was an interesting challenge and I tried to implement the Tiramisu model from [this](https://arxiv.org/abs/1611.09326) research paper. Its a 100 layer deep neural network model that was made to tackle image segmentation tasks.    
-The report I've written for the MLND Capstone project is at the Report link above.
+[Carvana Image Masking Challenge](https://www.kaggle.com/c/carvana-image-masking-challenge) was a Kaggle competition sponsored by Carvana - A online car buying platform. Its the first Kaggle experience I've had and was pretty challenging. We were tasked to remove background from car images and create a masking image for the cars. The goal was to enable Carvana to then take any car image, and place it on the foreground of any other image. Somewhat like Photoshop, but without human intervention and much much faster.
+This problem falls under the category of image segmentation, where we try to identify and locate objects in an image. In this particular problem, our job was to classify each pixel in the image into 2 classes : Foreground and Background. For modeling this problem, I chose to implement the Tiramisu model from [this](https://arxiv.org/abs/1611.09326) research paper. Its a 100 layer deep neural network model that was made to tackle image segmentation tasks. Due to limited compute power, I had to train on down scaled images and when we resize to the original dimension, we average out a lot of pixels. Nonetheless, it achieved a Dice score of around 0.994 on the original size test images. Didn't get the best Kaggle score, but had a great learning experience!
 
 <img src="images/carvana.png" alt="carvana" width="800"/><br>
 <img src="images/carvana_2.png" alt="carvana_2" width="800"/>
