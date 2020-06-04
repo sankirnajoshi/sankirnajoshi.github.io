@@ -115,6 +115,7 @@ draw(data[7])
 <table><tr><td>NOUN</td><td>VERB</td></tr><td>merger</td><td>proposed</td><tr></table>
 
 
+
 ### Building vocabularies
 
 Just like before, we have to build a mapping from tokens to integer ids. This time around, our model operates on a word level, processing one word per RNN step. This means we'll have to deal with far larger vocabulary.
