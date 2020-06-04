@@ -1,4 +1,8 @@
 <meta property="og:image" content="images/portfolio_image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+
 <p align="center" style="font-size:50px">SANKIRNA JOSHI</p>
 
 
