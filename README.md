@@ -140,7 +140,7 @@ The German credit scoring data is a dataset that has extensive information about
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 [Webpage](markdowns/boston_housing.md)
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-[R Markdown](markdowns/boston_housing.html)
+[R Markdown](markdowns/boston_housing_1.html)
 
 The Boston housing data was collected in 1978 and each of the 506 entries represent aggregated data about 14 features for homes from various suburbs in Boston, Massachusetts. We develop a regression model to predict housing prices for new houses in a similar locality. Being able to predict the prices of houses could be invaluable information for someone like a real estate agent. 
 
