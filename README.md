@@ -1,7 +1,20 @@
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QBSVS1VBRB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QBSVS1VBRB');
+</script>
+</head>
+
 <meta property="og:image" content="images/portfolio_image.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1024">
 <meta property="og:image:height" content="1024">
+
 
 <p align="center" style="font-size:50px">SANKIRNA JOSHI</p>
 
