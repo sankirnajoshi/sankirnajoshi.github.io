@@ -5,7 +5,7 @@
 <a href="mailto:joshis2@mail.uc.edu"><img border="0" alt="email" src="images/email.png" width="60" height="60"></a>
 <a href="https://www.linkedin.com/in/sankirna"><img border="0" alt="LinkedIn" src="images/LI.png" width="60" height="60"></a>
 <a href="https://twitter.com/JoshiSankirna"><img border="0" alt="Twitter" src="images/twitter.png" width="60" height="60"></a>
-<a href="reports/resume.html"><img border="0" alt="Twitter" src="images/resume.png" width="60" height="60"></a>
+<a href="reports/Sankirna_Joshi_Resume.pdf"><img border="0" alt="Resume" src="images/resume.png" width="60" height="60"></a>
 </p>
 
 # Data science portfolio by Sankirna Joshi
